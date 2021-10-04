@@ -4,6 +4,9 @@ body {
     font-size: 30px;
 }
 
+body::-webkit-scrollbar { 
+    display: none; 
+}
 
 
 /* Body Header */
@@ -22,6 +25,56 @@ body {
 
 /* Horizontal Lists */
 
+.bars{
+    color:white;
+    margin: 0;
+    margin-left: 80%;
+    display: none;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+
 .horizontal-list {
     list-style: none;
     padding-left: 0px;
@@ -32,7 +85,7 @@ body {
     display: inline-block;
     margin: 0px 8px 8px 0px;
     font-weight: 100;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .horizontal-list li a {
@@ -209,7 +262,7 @@ section:nth-child(2n + 1) {
     width: 40%;
     min-height: 150px;
     position: relative;
-    left: 5%;
+    left: 3%;
     text-align: right;
 }
 
@@ -219,7 +272,7 @@ section:nth-child(2n + 1) {
     width: 15px;
     height: 15px;
     background-color: lightgrey;
-    top: 8%;
+    top: 7%;
     border-radius: 50%;
     z-index: 1;
 }
@@ -229,7 +282,7 @@ section:nth-child(2n + 1) {
 }
 
 .timeline-box:nth-child(2n+1)::after {
-    right: -11.8%;
+    right: -17%;
 }
 
 .timeline-box:nth-child(2n)::after {
@@ -555,26 +608,61 @@ h3,h4,h5{
 }
 
 
-@media screen and (max-width:600px){
-    #timeline-divider{
-        left:6%;
-    }
+@media only screen and (max-width:572px){
     .timeline-box {
-        left: 12% !important;
-        width: 80%;
+        left: 10% !important;
+        width: 100%;
     }
-    .timeline-box:nth-child(2n+1)::after{
-        left: -9.3%;
+    .bars{
+        display: block;
+    }
+    .nav-menu{
+        display: none;
     }
     #my-image{
         margin-top: -13vh;  
     }
-    #contact-form button[type="submit"] {
-      margin-left: 10%;
+
+}
+
+@media only screen and (max-width:768px){
+    .timeline-box{
+        width: 90%;
+        left: 10% !important;
+    }
+    
+    .timeline-box::after{
+        left: -10.5% !important;
+    }
+
+    #timeline-divider{
+        top: 2%;
+        left:2%;
+    }
+
+    #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container {
+        flex-wrap: wrap;
     }
 
     #my-details-container {
-    margin-left: 20%;
+        width: 80%;
+        margin: 10%;
     }
 
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+}
+
+@media only screen and (min-width:480){
+    #body-header {
+        height:65vh;
+    }
+    
 }
