@@ -357,13 +357,13 @@ section:nth-child(2n + 1) {
 }
 
 .portfolio-image-container:hover .portfolio-details {
-    background-color: #070707;
+    background-color: #0707077a;
     color: white;
 }
 
 
 .portfolio-image-container:hover .portfolio-details a{
-    background-color: #070707;
+    background-color: #0707077a;
     color: white;
 }
 
