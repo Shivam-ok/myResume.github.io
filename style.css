@@ -135,7 +135,7 @@ section:nth-child(2n + 1) {
     width: 100%;
     border-radius: 50%;
     border: 3px solid white;
-    box-shadow: 1px 1px 10px 2px lightgrey;
+    box-shadow: 10px 10px 20px 0px lightgrey;
 }
 
 #about-para {
@@ -273,19 +273,6 @@ section:nth-child(2n + 1) {
     color: #2857a4;
 }
 
-
-@media screen and (max-width:600px){
-    #timeline-divider{
-        left:6%;
-    }
-    .timeline-box {
-        left: 12% !important;
-        width: 80%;
-    }
-    .timeline-box:nth-child(2n+1)::after{
-        left: -9.3%;
-    }
-}
 .experience-designation {
     font-size: 1.4rem;
 }
@@ -429,7 +416,7 @@ section:nth-child(2n + 1) {
 }
 
 .my-details-info-container span {
-    margin-left: 0.4rem;
+    margin-left:0.4rem;
 }
 
 .my-details-info-container i {
@@ -565,4 +552,29 @@ button:focus {
 /*text Setting */
 h3,h4,h5{
     text-align: center;
+}
+
+
+@media screen and (max-width:600px){
+    #timeline-divider{
+        left:6%;
+    }
+    .timeline-box {
+        left: 12% !important;
+        width: 80%;
+    }
+    .timeline-box:nth-child(2n+1)::after{
+        left: -9.3%;
+    }
+    #my-image{
+        margin-top: -13vh;  
+    }
+    #contact-form button[type="submit"] {
+      margin-left: 10%;
+    }
+
+    #my-details-container {
+    margin-left: 20%;
+    }
+
 }
