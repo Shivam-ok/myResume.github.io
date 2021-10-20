@@ -1,5 +1,8 @@
 # myResume.github.io
 My Resume Project
+
+![resume](https://user-images.githubusercontent.com/68122183/138079240-a41b59bb-65fd-4d9f-940d-f94ba91d2e26.gif)
+
 ![c](https://user-images.githubusercontent.com/68122183/135838135-1c397498-d418-4f73-94a5-ea789746c5eb.jpg)
 
 cyber security  image
