@@ -1,5 +1,6 @@
 # myResume.github.io
 My Resume Project
+https://shivam-ok.github.io/myResume.github.io/
 
 ![resume](https://user-images.githubusercontent.com/68122183/138079240-a41b59bb-65fd-4d9f-940d-f94ba91d2e26.gif)
 
